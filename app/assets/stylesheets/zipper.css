@@ -1,0 +1,24 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+.bats_item .info{display:inline;}
+
+.light,
+.light.yellow{
+	width:130px;
+	height:130px;
+	background: url('/assets/yellow_light.png') left top no-repeat;
+}
+.light.red,
+.light.false{
+	background: url('/assets/red_light.png') left top no-repeat;
+}
+.light.green,
+.light.true{
+	background: url('/assets/green_light.png') left top no-repeat;
+}
+
