@@ -87,23 +87,23 @@ function preProcessCheck(data){
 		timestamp = date.getFullYear() + "-" + date.getMonth() + "-" + date.getDate() + " " +  date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds();
 
 	if(data.connObjectList.length < 1){
-		flashError('error','List of connected objects is empty. (' + timestamp + ')' );
+		flashError('error','<h2>ERROR</h2>List of connected objects is empty. (' + timestamp + ')' );
 	}
 	if(data.usingBATS === undefined){
-		flashError('error','usingBATS key is not present in JSON. (' + timestamp + ')' );
+		flashError('error','<h2>ERROR</h2>usingBATS key is not present in JSON. (' + timestamp + ')' );
 	}
 	if(data.whenCanUserInteract === undefined){
-		flashError('error','whenCanUserInteract key is not present in JSON. (' + timestamp + ')' );
+		flashError('error','<h2>ERROR</h2>whenCanUserInteract key is not present in JSON. (' + timestamp + ')' );
 	}
 	$.each(data.connObjectList, function(i,obj){
 		if(obj.deviceType === undefined){
-			flashError('error','deviceType is not present in JSON. (' + timestamp + ')');
+			flashError('error','<h2>ERROR</h2>deviceType is not present in JSON. (' + timestamp + ')');
 		}
 		if(obj.deviceName === undefined){
-			flashError('error','deviceName is not present in JSON. (' + timestamp + ')');
+			flashError('error','<h2>ERROR</h2>deviceName is not present in JSON. (' + timestamp + ')');
 		}
 		if(obj.connected === undefined){
-			flashError('error','connected key is not present in JSON. (' + timestamp + ')');
+			flashError('error','<h2>ERROR</h2>connected key is not present in JSON. (' + timestamp + ')');
 		}
 	});
 	

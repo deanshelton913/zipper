@@ -3,12 +3,20 @@
 	{
 	"deviceType":"BATS",
 	"deviceName":"10.191.252.152",
+	"connected":false
+	},{
+	"deviceType":"BATS",
+	"deviceName":"10.191.252.152",
 	"connected":true
 	},{
 	"deviceType":"BATS",
 	"deviceName":"10.191.252.152",
 	"connected":false
+	},{
+	"deviceType":"BATS",
+	"deviceName":"10.191.252.152",
+	"connected":false
 	}],
-	"usingBATS":true,
+	"usingBATS":false,
 	"whenCanUserInteract":1366397585850
 }
